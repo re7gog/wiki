@@ -13,7 +13,7 @@ head:
       content: "Step-by-step guide for installing and configuring WireGuard Easy VPN server on various Linux distributions."
 ---
 
-# WireGuard Easy Installation Guide
+# WireGuard Easy Installation Guide (old version)
 
 <img src="/images/vpn/wireguard-easy/wg-easy-logo.png" style="display: flex !important; justify-content: center !important; height: 500px;"></img>
 
