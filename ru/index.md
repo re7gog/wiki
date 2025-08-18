@@ -91,6 +91,14 @@ layout: home
 </div>
 
 <style>
+
+.dlink {
+  color: var(--vp-c-text-1) !important;
+  text-decoration: none;
+  background-image: none !important;
+  transition: none !important;
+}
+
 .welcome-section {
   padding: 2rem 1rem;
   text-align: center;

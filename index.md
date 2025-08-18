@@ -92,7 +92,7 @@ layout: home
 <style>
 
 .dlink {
-  color: #fff !important;
+  color: var(--vp-c-text-1) !important;
   text-decoration: none;
   background-image: none !important;
   transition: none !important;
