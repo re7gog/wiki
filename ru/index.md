@@ -19,7 +19,7 @@ layout: home
   <div class="welcome-container">
     <h1>Добро пожаловать на вики Senko Digital</h1>
     <p class="intro-text">
-      Мы - самый пушистый хостинг в мире!<br>Здесь вы найдете подробные руководства по настройке серверов, использованию нашей панели управления и управлению игровыми серверами.
+      На данном ресурсе вы найдёте подробные руководства по настройке серверов, использованию нашей панели управления и управлению игровыми серверами.
     </p>
   </div>
 </div>
@@ -36,7 +36,7 @@ layout: home
     <div class="card-icon">🛠️</div>
     <h3>Игровые сервера</h3>
     <p>Пошаговые инструкции для игр, таких как Minecraft и Garry's Mod</p>
-    <a href="/ru/games" class="card-link">Смотреть инструкции</a>
+    <a href="/ru/games" class="card-link">Подробнее</a>
   </div>
   
   <div class="feature-card">
@@ -58,24 +58,34 @@ layout: home
   <h2 class="content-heading">Что вы найдете в нашей вики</h2>
   <div class="content-list">
     <div class="content-item">
+    <a href="/ru/vps/getting-started" class="dlink">
       <span class="content-icon">🖥️</span>
       <span>Советы по оптимизации работы VPS</span>
+    </a>
     </div>
     <div class="content-item">
+    <a href="/ru/vpn/3x-ui" class="dlink">
       <span class="content-icon">🔐</span>
       <span>Настройка VPN протоколов</span>
+    </a>
     </div>
     <div class="content-item">
+    <a href="/ru/games/" class="dlink">
       <span class="content-icon">🎮</span>
       <span>Руководства по настройке игровых серверов</span>
+    </a>
     </div>
     <div class="content-item">
+    <a href="/ru/panel/" class="dlink">
       <span class="content-icon">📋</span>
-      <span>Инструкции по работе с панелью управления</span>
+      <span>Работа с игровой панелью управления</span>
+    </a>
     </div>
     <div class="content-item">
+    <a href="/ru/faq" class="dlink">
       <span class="content-icon">🤔</span>
-      <span>Ответы на частые вопросы и устранение неполадок</span>
+      <span>Ответы на частые вопросы</span>
+    </a>
     </div>
   </div>
 </div>

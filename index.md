@@ -6,7 +6,7 @@ head:
     - name: keywords
       content: hosting, documentation, wiki, game servers, vps hosting, control panel, senko digital, minecraft, garry's mod
   - - meta
-    - property: og:title 
+    - property: og:title
       content: "Home"
   - - meta
     - property: og:description
@@ -18,7 +18,7 @@ layout: home
   <div class="welcome-container">
     <h1>Welcome to Senko Digital Wiki</h1>
     <p class="intro-text">
-      We're the fluffiest hosting in the world! Here you'll find comprehensive guides for configuring servers, using our control panel, and managing game servers.
+      Here you'll find comprehensive guides for configuring servers, using our control panel, and managing game servers.
     </p>
   </div>
 </div>
@@ -57,29 +57,47 @@ layout: home
   <h2 class="content-heading">What you'll find in our wiki</h2>
   <div class="content-list">
     <div class="content-item">
-      <span class="content-icon">🖥️</span>
-      <span>VPS optimization tips</span>
+      <a href="/vps/getting-started" class="dlink">
+        <span class="content-icon">🖥️</span>
+        <span>VPS optimization tips</span>
+      </a>
     </div>
     <div class="content-item">
-      <span class="content-icon">🔐</span>
-      <span>VPN configuration</span>
+      <a href="/vpn/3x-ui" class="dlink">
+        <span class="content-icon">🔐</span>
+        <span>VPN configuration</span>
+      </a>
     </div>
     <div class="content-item">
-      <span class="content-icon">🎮</span>
-      <span>Game server setup guides</span>
+      <a href="/games/" class="dlink">
+        <span class="content-icon">🎮</span>
+        <span>Game server setup guides</span>
+      </a>
     </div>
     <div class="content-item">
-      <span class="content-icon">📋</span>
-      <span>Control panel instructions</span>
+      <a href="/panel/" class="dlink">
+        <span class="content-icon">📋</span>
+        <span>Control panel instructions</span>
+      </a>
     </div>
     <div class="content-item">
-      <span class="content-icon">🤔</span>
-      <span>FAQs and troubleshooting</span>
+      <a href="/faq" class="dlink">
+        <span class="content-icon">🤔</span>
+        <span>FAQs and troubleshooting</span>
+      </a>
     </div>
   </div>
 </div>
 
 <style>
+
+.dlink {
+  color: #fff !important;
+  text-decoration: none;
+  background-image: none !important;
+  transition: none !important;
+}
+
 .welcome-section {
   padding: 2rem 1rem;
   text-align: center;
