@@ -15,6 +15,10 @@ html, body {
   transition: background-color 0.3s ease;
 }
 
+.VPDoc.has-sidebar.has-aside::before {
+  visibility: hidden;
+}
+
 /* Removed fade-in animation for main content */
 main {
   /* No animations here */
