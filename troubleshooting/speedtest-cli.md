@@ -24,18 +24,22 @@ This guide will help you install and use Speedtest CLI on various operating syst
 ::: code-group
 
 ```bash [Ubuntu/Debian]
-# Removing unofficial versions of Speedtest CLI
-sudo rm /etc/apt/sources.list.d/speedtest.list
-sudo apt-get update
-sudo apt-get remove speedtest
-sudo apt-get remove speedtest-cli
-
 # Installing sudo if not already installed
 apt install sudo -y
 
-# Installing Speedtest CLI
+# Removing unofficial versions of Speedtest CLI
+sudo rm /etc/apt/sources.list.d/speedtest.list
+sudo apt-get remove speedtest
+sudo apt-get remove speedtest-cli
+
+# Speedtest CLI repository installation
 sudo apt-get install curl
 curl -s https://packagecloud.io/install/repositories/ookla/speedtest-cli/script.deb.sh | sudo bash
+# Temporary workaround for Ubuntu 24.04 and higher
+sudo sed -i 's/noble/jammy/g' /etc/apt/sources.list.d/ookla_speedtest-cli.list
+
+# Speedtest CLI installation
+sudo apt-get update
 sudo apt-get install speedtest
 ```
 

@@ -24,18 +24,23 @@ Speedtest CLI - это официальная утилита от Ookla для �
 ::: code-group
 
 ```bash [Ubuntu/Debian]
+# Установите sudo, если он ещё не установлен
+apt install sudo -y
+
 # Удаление неофициальных версий Speedtest CLI
 sudo rm /etc/apt/sources.list.d/speedtest.list
-sudo apt-get update
 sudo apt-get remove speedtest
 sudo apt-get remove speedtest-cli
 
-# Установка sudo, если он ещё не установлен
-apt install sudo -y
-
-# Установка Speedtest CLI
+# Установка репозитория Speedtest CLI
 sudo apt-get install curl
 curl -s https://packagecloud.io/install/repositories/ookla/speedtest-cli/script.deb.sh | sudo bash
+
+# Временное решение для Ubuntu 24.04 и выше
+sudo sed -i 's/noble/jammy/g' /etc/apt/sources.list.d/ookla_speedtest-cli.list
+
+# Установка программы Speedtest CLI
+sudo apt-get update
 sudo apt-get install speedtest
 ```
 
