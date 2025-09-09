@@ -1,19 +1,19 @@
 ---
-title: "Installation and Usage Guide for 3x-ui Panel"
-description: "Installation of 3x-ui panel on VPS/VDS servers for VPN protocol configuration, such as VLESS, ShadowSocks, Wireguard and VMess"
+title: "Installation and Usage Guide for 3X-UI Panel"
+description: "Installation of 3X-UI panel on VPS/VDS servers for VPN protocol configuration, such as VLESS, ShadowSocks, Wireguard and VMess"
 head:
   - - meta
     - name: keywords
       content: vpn, 3x-ui, xray, vless, vmess, trojan, shadowsocks, wireguard, reality, server management, guide
   - - meta
     - property: og:title 
-      content: "VPN - Installation and Usage Guide for 3x-ui Panel"
+      content: "VPN - Installation and Usage Guide for 3X-UI Panel"
   - - meta
     - property: og:description
-      content: "Learn how to install, configure and manage your VPN server with the powerful 3x-ui panel. Complete setup instructions for all protocols."
+      content: "Installation of 3X-UI panel on VPS/VDS servers for VPN protocol configuration, such as VLESS, ShadowSocks, Wireguard and VMess."
 ---
 
-# Installation and Usage Guide for 3x-ui Panel
+# Installation and Usage Guide for 3X-UI Panel
 
 <p align="center">
   <picture>
@@ -22,9 +22,13 @@ head:
   </picture>
 </p>
 
-3x-ui is a multifunctional web panel for managing VPN servers, supporting various protocols such as VMess, VLESS, Trojan, ShadowSocks, and WireGuard.
+3X-UI is a multifunctional web panel for managing VPN servers, supporting various protocols such as VMess, VLESS, Trojan, ShadowSocks, and WireGuard.
 
 This panel provides easy management of VPN connections, configuration of multiple users, and setting limits on traffic, expiration dates, and IP addresses.
+
+::: tip 
+Our hosting clients have access to fully automated 3X-UI panel installation script during initial service ordering, or through scripts in the VM control panel. All that remains is to create users and configure inbounds.
+:::
 
 ## 3x-ui Features
 
@@ -40,9 +44,27 @@ This panel provides easy management of VPN connections, configuration of multipl
 
 ## Installation
 
+## Процесс установки
+
+### Automatic Installation for Hosting Clients
+
+#### During Service Order
+
+In the order menu, select "3X-UI" from the dropdown menu, complete the order and wait for service processing to finish.
+
+Immediately after server activation, you will receive login credentials for both the server OS and 3X-UI panel. After that, you can [log in](/vpn/3x-ui#logging-into-the-web-panel) and start [configuring connections](/vpn/3x-ui#setting-up-connections-inbounds).
+
+#### Through the VM Panel
+
+Go to the [VM control panel](https://vm.senko.digital), navigate to the management of the desired server, expand the "Menu" in the top right corner and select "Run script".
+
+In the dialog, select the "3X-UI" option and enable "Send email associated with script".
+
+After installation is complete, you will receive an email with login credentials for the control panel. Then you can [log in](/vpn/3x-ui#logging-into-the-web-panel) and start [configuring connections](/vpn/3x-ui#setting-up-connections-inbounds).
+
 ### Standard Installation
 
-To install 3x-ui, run the following command:
+To install 3X-UI, run the following command:
 
 ```bash
 bash <(curl -Ls https://raw.githubusercontent.com/mhsanaei/3x-ui/master/install.sh)
@@ -189,7 +211,7 @@ Recommended clients:
 
 To connect:
 
-1. In the 3x-ui web panel, click on the QR code of the desired user
+1. In the 3X-UI web panel, click on the QR code of the desired user
 2. Copy the configuration or scan the QR code using a VPN client
 3. Import the configuration into the client and make the connection
 
@@ -203,7 +225,7 @@ Recommended clients:
 To connect:
 
 1. Install the client from Google Play
-2. In the 3x-ui web panel, click on the QR code of the desired user
+2. In the 3X-UI web panel, click on the QR code of the desired user
 3. Scan the QR code using the VPN client or copy and import the configuration
 4. Connect using the imported configuration
 
@@ -218,13 +240,13 @@ Recommended clients:
 To connect:
 
 1. Install the client from the App Store
-2. In the 3x-ui web panel, click on the QR code of the desired user
+2. In the 3X-UI web panel, click on the QR code of the desired user
 3. Scan the QR code using the client or copy and import the configuration
 4. Connect using the imported configuration
 
 ## Monitoring and Statistics
 
-In the 3x-ui web panel, you can monitor client activity:
+In the 3X-UI web panel, you can monitor user activity:
 
 - Total traffic consumption
 - Traffic usage by user
