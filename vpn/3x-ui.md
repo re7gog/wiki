@@ -44,8 +44,6 @@ Our hosting clients have access to fully automated 3X-UI panel installation scri
 
 ## Installation
 
-## Процесс установки
-
 ### Automatic Installation for Hosting Clients
 
 #### During Service Order
