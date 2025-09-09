@@ -15,6 +15,8 @@ head:
 
 # Руководство по установке WireGuard VPN
 
+<img src="/images/vpn/wireguard-easy/wg-easy-logo.png" style="display: flex !important; justify-content: center !important; height: 500px;"></img>
+
 WireGuard — это современный, быстрый и безопасный VPN‑протокол, который достаточно легко настраивается и разворачивается на практически любом сервере. Это руководство проведёт вас через процесс установки и настройки WireGuard на сервере для создания защищённого VPN‑подключения.
 
 ::: tip Подсказка
