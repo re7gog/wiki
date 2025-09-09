@@ -144,6 +144,7 @@ export default defineConfig({
               text: "🔐 VPN/Security",
               items: [
                 { text: "🔒 3X-UI", link: "/vpn/3x-ui" },
+                { text: "🔒 WireGuard", link: "/vpn/wireguard" },
                 { text: "🔒 WireGuard Easy", link: "/vpn/wireguard-easy" },
               ],
               collapsed: false,
@@ -309,6 +310,7 @@ export default defineConfig({
               text: "🔐 VPN/Безопасность",
               items: [
                 { text: "🔒 3X-UI", link: "/ru/vpn/3x-ui" },
+                { text: "🔒 WireGuard", link: "/ru/vpn/wireguard" },
                 { text: "🔒 WireGuard Easy", link: "/ru/vpn/wireguard-easy" },
               ],
               collapsed: false,
