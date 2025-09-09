@@ -23,7 +23,7 @@ Go to the [personal area](https://my.senko.digital/billmgr) and click the "Regis
 
 After that, you will be redirected to the account creation page.
 
-![registration form](/images/personal-area/register/1.png){data-zoomable}
+![registration form](/images/personal-area/register/en/1.png){data-zoomable}
 
 Fill in all contact information. The mandatory requirements are a valid email address and the country of the account for proper VAT accounting.
 
@@ -31,7 +31,7 @@ Review the attached documents in the registration form - terms of use and privac
 
 After clicking the "Register" button, you will be automatically redirected to the main page of your personal area.
 
-![personal account](/images/personal-area/register/2.png){data-zoomable}
+![personal account](/images/personal-area/register/en/2.png){data-zoomable}
 
 Congratulations! Your account has been successfully created.
 
@@ -41,7 +41,7 @@ We strongly recommend confirming your email address to receive important notific
 
 You can do this by clicking on the text in the notification at the top of the site:
 
-![email confirmation notification](/images/personal-area/register/3.png){data-zoomable}
+![email confirmation notification](/images/personal-area/register/en/3.png){data-zoomable}
 
 In the opened window, confirm sending the email by clicking the "Ok" button.
 

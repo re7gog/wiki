@@ -26,25 +26,25 @@ head:
 
 Перейдите в [личный кабинет](https://my.senko.digital/billmgr) и авторизуйтесь в системе. Если у вас ещё нет аккаунта, [создайте его](/ru/personal-area/register.md).
 
-![вход в систему](/images/personal-area/new-ticket/1.png){data-zoomable}
+![вход в систему](/images/personal-area/new-ticket/ru/1.png){data-zoomable}
 
 ### Откройте раздел поддержки
 
 В боковом меню найдите раздел **«Поддержка»** и выберите **«Запросы»**.
 
-![боковое меню](/images/personal-area/new-ticket/2.png){data-zoomable}
+![боковое меню](/images/personal-area/new-ticket/ru/2.png){data-zoomable}
 
 ### Создайте новый тикет  
 
 Перед вами откроется список ваших обращений. Чтобы отправить новый запрос, нажмите на кнопку **«Создать»**.
 
-![создание тикета](/images/personal-area/new-ticket/3.png){data-zoomable}
+![создание тикета](/images/personal-area/new-ticket/ru/3.png){data-zoomable}
 
 ### Опишите проблему  
 
 Укажите тему обращения, подробно опишите ситуацию и приложите необходимые файлы, если это нужно.
 
-![заполнение тикета](/images/personal-area/new-ticket/4.png){data-zoomable}
+![заполнение тикета](/images/personal-area/new-ticket/ru/4.png){data-zoomable}
 
 После заполнения всех полей отправьте запрос.
 
@@ -54,6 +54,3 @@ head:
 Система запросов поддерживает разметку текста с помощью Markdown.
 :::
 
-::: tip
-Мы предоставляем нашим клиентам возможность выбрать приоритет запроса - выберите тот, который больше всего подходит под ваш вопрос.
-:::

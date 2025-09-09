@@ -17,7 +17,7 @@ head:
 
 Senko Digital offers you the opportunity to earn by referring clients. You receive **5% from each of their orders**, and this payment remains yours forever.
 
-![referral program in personal account](/images/personal-area/referral/1.png){data-zoomable}
+![referral program in personal account](/images/personal-area/referral/en/1.png){data-zoomable}
 
 ## How it works?
 

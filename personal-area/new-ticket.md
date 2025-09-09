@@ -26,34 +26,30 @@ If you have questions or problems, you can always contact Senko Digital support.
 
 Go to your [personal account](https://my.senko.digital/billmgr) and log in to the system. If you don't have an account yet, [create one](/personal-area/register.md).
 
-![system login](/images/personal-area/ordering/2.png){data-zoomable}
+![system login](/images/personal-area/new-ticket/en/1.png){data-zoomable}
 
 ### Open the support section
 
-In the side menu, find the **"Support"** section and select **"Requests"**.
+In the side menu, find the **Support** section and select **Requests**.
 
-![side menu](/images/personal-area/new-ticket/2.png){data-zoomable}
+![side menu](/images/personal-area/new-ticket/en/2.png){data-zoomable}
 
 ### Create a new ticket
 
-You will see a list of your requests. To send a new request, click the **"Create"** button.
+You will see a list of your requests. To send a new request, click the **Add** button.
 
-![creating a ticket](/images/personal-area/new-ticket/3.png){data-zoomable}
+![creating a ticket](/images/personal-area/new-ticket/en/3.png){data-zoomable}
 
 ### Describe the problem
 
 Specify the subject of your request, describe the situation in detail, and attach necessary files if needed.
 
-![filling out the ticket](/images/personal-area/new-ticket/4.png){data-zoomable}
+![filling out the ticket](/images/personal-area/new-ticket/en/4.png){data-zoomable}
 
 After filling in all fields, send the request.
 
 Our specialists will review your ticket and respond as soon as possible.
 
 ::: tip
-The request system supports text formatting using Markdown.
-:::
-
-::: tip
-We provide our clients with the ability to choose the priority of the request - select the one that suits your question best.
+The ticketing system supports text formatting using Markdown.
 :::

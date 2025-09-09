@@ -34,7 +34,7 @@ After selecting a plan, you'll be prompted to log in to an existing account or r
 ![Authorization page](/images/personal-area/ordering/2.png){data-zoomable}
 
 - **If you already have an account**: Log in using your email and password
-- **If you don't have an account**: Complete the quick registration
+- **If you don't have an account**: Complete the [quick registration](/personal-area/register)
 - **If you're already logged in**: The system will automatically take you to the order form
 
 ### Step 3: Complete the order form
@@ -51,6 +51,6 @@ Choose a convenient payment method, make the payment, and complete your order.
 
 After successful payment, your VPS server will be set up within 120 seconds.
 
-Access to the control panel and server login credentials will be sent to the email you provided.
+Access to the control panel and server login credentials will be sent to the email you have provided during registration.
 
-![Email](/images/vps/getting-started/2.png){data-zoomable}
+![VPS credentials email](/images/personal-area/ordering/5-en.png){data-zoomable}
