@@ -4,7 +4,6 @@ import ProgressBar from './components/ProgressBar.vue'
 import PageContributors from '../components/PageContributors.vue'
 import { useData } from 'vitepress'
 import { ref, onMounted, computed, watch } from 'vue'
-import { FeedbackData, AllFeedbackItem } from './types'
 
 const { Layout } = DefaultTheme
 const { isDark, page, frontmatter, theme, lang, localeIndex, site } = useData()
@@ -22,8 +21,6 @@ function getCookie(name: string): string | null {
 
 onMounted(() => {
   setTimeout(() => {
-    checkFeedbackState()
-
     const sidebarState = getCookie('wiki_sidebar_collapsed')
     if (window.innerWidth < 960) {
       isSidebarCollapsed.value = sidebarState !== null ? sidebarState === 'true' : true
@@ -56,97 +53,6 @@ watch(() => isSidebarCollapsed.value, (isCollapsed) => {
     document.documentElement.setAttribute('data-sidebar-collapsed', String(isCollapsed))
   }
 }, { immediate: true })
-
-const feedbackSubmitted = ref(false)
-const feedbackValue = ref<boolean | null>(null)
-
-const currentPageId = computed(() => {
-  if (page.value && page.value.relativePath) {
-    return '/' + page.value.relativePath.replace(/\.(md|html)$/, '')
-  }
-  
-  if (typeof window !== 'undefined') {
-    let path = window.location.pathname || ''
-    
-    if (path !== '/' && path.endsWith('/')) {
-      path = path.slice(0, -1)
-    }
-    
-    return path
-  }
-  
-  return ''
-})
-
-watch(() => page.value?.relativePath, () => {
-  setTimeout(checkFeedbackState, 100)
-}, { immediate: true })
-
-function checkFeedbackState(): void {
-  if (typeof localStorage === 'undefined' || !currentPageId.value) return
-
-  try {
-    feedbackSubmitted.value = false
-    feedbackValue.value = null
-
-    const key = `page-feedback-${currentPageId.value}`
-    const storedFeedback = localStorage.getItem(key)
-
-    if (storedFeedback) {
-      try {
-        const parsed = JSON.parse(storedFeedback) as FeedbackData
-        feedbackSubmitted.value = true
-        feedbackValue.value = parsed.value
-        console.log(`Found feedback for: ${currentPageId.value}`, parsed)
-      } catch (e) {
-        console.warn('Invalid feedback data in localStorage')
-      }
-    }
-  } catch (e) {
-    console.error('Error reading feedback from localStorage:', e)
-  }
-}
-
-function submitFeedback(isHelpful: boolean): void {
-  if (!currentPageId.value || feedbackSubmitted.value) return
-
-  feedbackValue.value = isHelpful
-  feedbackSubmitted.value = true
-
-  if (typeof localStorage !== 'undefined') {
-    try {
-      const key = `page-feedback-${currentPageId.value}`
-      localStorage.setItem(key, JSON.stringify({
-        value: isHelpful,
-        timestamp: new Date().toISOString(),
-        url: window.location.href,
-        path: currentPageId.value
-      }))
-
-      console.log(`Saved feedback for: ${currentPageId.value}`, isHelpful)
-
-      try {
-        const allFeedback = JSON.parse(localStorage.getItem('all-page-feedback') || '[]') as AllFeedbackItem[]
-        allFeedback.push({
-          path: currentPageId.value,
-          isHelpful: isHelpful,
-          timestamp: new Date().toISOString(),
-          url: window.location.href
-        })
-
-        if (allFeedback.length > 100) {
-          allFeedback.splice(0, allFeedback.length - 100)
-        }
-
-        localStorage.setItem('all-page-feedback', JSON.stringify(allFeedback))
-      } catch (err) {
-        console.warn('Could not save to feedback registry:', err)
-      }
-    } catch (e) {
-      console.error('Error saving feedback to localStorage:', e)
-    }
-  }
-}
 
 function goBack(): void {
   history.back()
@@ -193,28 +99,6 @@ function reloadPage(): void {
       </div>
     </template>
     <template #doc-footer-before>
-      <div class="page-feedback" v-if="currentPageId && currentPageId !== '/'">
-        <template v-if="!feedbackSubmitted">
-          <p>Was this page helpful?</p>
-          <div class="feedback-buttons">
-            <button @click="submitFeedback(true)" class="feedback-button positive">
-              <span class="feedback-icon">👍</span> Yes
-            </button>
-            <button @click="submitFeedback(false)" class="feedback-button negative">
-              <span class="feedback-icon">👎</span> No
-            </button>
-          </div>
-        </template>
-        <template v-else>
-          <p>Thank you for your feedback!</p>
-          <div class="feedback-result">
-            <div :class="['feedback-indicator', feedbackValue ? 'positive' : 'negative']">
-              <span class="feedback-icon">{{ feedbackValue ? '👍' : '👎' }}</span>
-              <span>{{ feedbackValue ? 'You found this page helpful' : 'You didn\'t find this page helpful' }}</span>
-            </div>
-          </div>
-        </template>
-      </div>
       <PageContributors />
       <div class="page-divider"></div>
     </template>
@@ -350,81 +234,6 @@ function reloadPage(): void {
 
 .dark .circle-3 {
   opacity: 0.15;
-}
-
-.page-feedback {
-  margin: 3rem 0 1rem;
-  padding: 1.5rem;
-  background: var(--vp-c-bg-soft);
-  border-radius: 16px;
-  text-align: center;
-}
-
-.page-feedback p {
-  font-size: 1.1rem;
-  font-weight: 500;
-  margin-bottom: 1rem;
-}
-
-.feedback-buttons {
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
-}
-
-.feedback-button {
-  display: flex;
-  align-items: center;
-  padding: 0.5rem 1.25rem;
-  border: none;
-  border-radius: 20px;
-  font-weight: 500;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  background: var(--vp-c-bg);
-  color: var(--vp-c-text-1);
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-}
-
-.feedback-icon {
-  font-size: 1.25rem;
-  margin-right: 0.5rem;
-}
-
-.feedback-button.positive:hover {
-  background: rgba(72, 187, 120, 0.1);
-  color: #48bb78;
-  transform: translateY(-2px);
-}
-
-.feedback-button.negative:hover {
-  background: rgba(245, 101, 101, 0.1);
-  color: #f56565;
-  transform: translateY(-2px);
-}
-
-.feedback-result {
-  display: flex;
-  justify-content: center;
-  margin-top: 0.5rem;
-}
-
-.feedback-indicator {
-  display: flex;
-  align-items: center;
-  padding: 0.5rem 1.25rem;
-  border-radius: 20px;
-  font-weight: 500;
-}
-
-.feedback-indicator.positive {
-  background: rgba(72, 187, 120, 0.1);
-  color: #48bb78;
-}
-
-.feedback-indicator.negative {
-  background: rgba(245, 101, 101, 0.1);
-  color: #f56565;
 }
 
 .page-divider {
