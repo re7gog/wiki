@@ -1,5 +1,5 @@
 <!--
-  - Copyright (C) senko://digital - All Rights Reserved
+  - Copyright (C) Senko Digital Ltd - All Rights Reserved
   - Unauthorized copying of this file, via any medium is strictly prohibited
   - Proprietary and confidential
 -->
