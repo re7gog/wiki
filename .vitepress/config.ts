@@ -45,7 +45,7 @@ export default defineConfig({
     root: {
       label: 'English',
       lang: 'en',
-      description: 'Official wiki of Senko Digital hosting provider - the fluffiest hosting in the world!',
+      description: 'Official wiki of Senko Digital hosting provider - useful guides for managing game servers, using the control panel, setting up VPNs and much more!',
       themeConfig: {
         editLink: {
           pattern: 'https://github.com/senko-digital/wiki/edit/main/:path',
@@ -213,7 +213,7 @@ export default defineConfig({
       label: 'Русский',
       lang: 'ru',
       link: '/ru/',
-      description: 'Официальная вики хостинг-провайдера Senko Digital - самого пушистого хостинга в мире!',
+      description: 'Официальная вики хостинг-провайдера Senko Digital - полезные руководства по управлению игровыми серверами, использованию панели управления, настройке VPN и многое другое!',
       themeConfig: {
         editLink: {
           pattern: 'https://github.com/senko-digital/wiki/edit/main/:path',
