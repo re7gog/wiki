@@ -399,7 +399,7 @@ export default defineConfig({
     },
 
     socialLinks: [
-      { icon: "discord", link: "https://snk.wtf/d" },
+      { icon: "discord", link: "https://senko.digital/discord" },
       { icon: 'twitter', link: 'https://x.com/senkodigital' },
     ],
     editLink: {

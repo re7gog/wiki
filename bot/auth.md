@@ -45,7 +45,7 @@ Never share the key with third parties - this key can be used to control server 
 
 Now you need to authorize with this key in our Discord bot.
 
-Go to direct messages with the bot `senko//bot#4900` - you can find it on [our Discord server](https://snk.wtf/d).
+Go to direct messages with the bot `senko//bot#4900` - you can find it on [our Discord server](https://senko.digital/discord).
 
 Send the command `/auth API-key`, where `API-key` should be the key you generated for authorization in the bot.
 
