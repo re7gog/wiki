@@ -7,7 +7,7 @@ head:
       content: server console, commands, logs, game panel, server management, monitoring
   - - meta
     - property: og:title 
-      content: "Control Panel - Server Console"
+      content: "Game Panel - Server Console"
   - - meta
     - property: og:description
       content: "Guide to using the game server console. Sending commands, monitoring logs, and managing the server through the console."

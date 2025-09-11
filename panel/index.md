@@ -7,7 +7,7 @@ head:
       content: game panel, server management, getting started, pterodactyl, guide
   - - meta
     - property: og:title 
-      content: "Control Panel - Getting Started"
+      content: "Game Panel - Getting Started"
   - - meta
     - property: og:description
       content: "Guide to getting started with the game control panel. Main functions and features of the panel for managing game servers."

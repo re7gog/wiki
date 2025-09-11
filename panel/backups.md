@@ -1,5 +1,5 @@
 ---
-title: "Backup"
+title: "Backups"
 description: "Guide to creating and managing game server backups. Data protection and quick server recovery."
 head:
   - - meta
@@ -7,7 +7,7 @@ head:
       content: backups, backup copies, game panel, server recovery, backup
   - - meta
     - property: og:title 
-      content: "Control Panel - Backup"
+      content: "Game Panel - Backups"
   - - meta
     - property: og:description
       content: "Guide to creating and managing game server backups. Data protection and quick server recovery."

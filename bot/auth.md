@@ -1,6 +1,6 @@
 ---
 title: "Discord Bot Authorization"
-description: "Guide for authorizing with the Senko Digital Discord bot. Connecting the bot to the control panel for server monitoring."
+description: "Guide for authorizing with the Senko Digital Discord bot. Connecting the bot to the game panel for server monitoring."
 head:
   - - meta
     - name: keywords
@@ -10,12 +10,12 @@ head:
       content: "Discord Bot - Authorization"
   - - meta
     - property: og:description
-      content: "Guide for authorizing with the Senko Digital Discord bot. Connecting the bot to the control panel for server monitoring."
+      content: "Guide for authorizing with the Senko Digital Discord bot. Connecting the bot to the game panel for server monitoring."
 ---
 
 # 👤 Authorization
 
-Setting up ~~telepathic connection with foxes~~ the connection between the panel and our Discord bot.
+Setting up a connection between the panel and our Discord bot.
 
 ## Creating an API Token
 

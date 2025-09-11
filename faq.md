@@ -42,11 +42,11 @@ If your order is being processed for more than 48 hours, you will be given the o
 
 Detailed instructions for ordering a service are [available in this article](/personal-area/vps-order).
 
-## 💻 How do I access the game control panel?
+## 💻 How do I access the game panel?
 
-The control panel is [available here](https://panel.senko.digital/auth/login).
+The game panel is [available here](https://panel.senko.digital).
 
-To log in, you need to use the email address you provided when registering in your personal account, as well as the password you set yourself when initially ordering the server (or have already used in the control panel).
+To log in, you need to use the email address you provided when registering in your personal account, as well as the password you set yourself when initially ordering the server (or have already used in the game panel).
 
 ## 📊 Can I change my plan after purchase?
 

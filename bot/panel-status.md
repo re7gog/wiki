@@ -15,9 +15,9 @@ head:
 
 # 🔁 Server Status from Panel
 
-With the bot, you can also view the status of your servers from the control panel.
+With the bot, you can also view the status of your servers from the game panel.
 
-To use this command, you need to be [authorized with an API key from the control panel](/bot/auth).
+To use this command, you need to be [authorized with an API key from the game panel](/bot/auth).
 
 You can use the `/servers-list` command to display a list of servers with their IDs and status.
 
@@ -27,4 +27,4 @@ You can use the `/servers-list` command to display a list of servers with their 
 Please note that even if a server is shown as running, this does not guarantee that it is actually working. For a complete server status check, it is recommended to use [**[🔁 Any Server Status](/bot/any-status)**].
 :::
 
-This command is also very useful if you have several servers in the control panel and need to manage power or send commands to a specific server.
+This command is also very useful if you have several servers in the game panel and need to manage power or send commands to a specific server.

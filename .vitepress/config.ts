@@ -155,7 +155,7 @@ export default defineConfig({
               text: "🎮 Game Hosting",
               items: [
                 {
-                  text: "Control Panel",
+                  text: "Game Panel",
                   items: [
                     { text: "❓ Getting Started", link: "/panel/" },
                     { text: "💻 Console", link: "/panel/console" },

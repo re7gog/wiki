@@ -7,7 +7,7 @@ head:
       content: users, access rights, game panel, server management, inviting users
   - - meta
     - property: og:title 
-      content: "Control Panel - User Management"
+      content: "Game Panel - User Management"
   - - meta
     - property: og:description
       content: "Guide to managing users in the game panel. Inviting new users, configuring access rights, and managing permissions."

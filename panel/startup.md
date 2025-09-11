@@ -7,7 +7,7 @@ head:
       content: startup parameters, server configuration, game panel, server setup
   - - meta
     - property: og:title 
-      content: "Control Panel - Startup Parameters"
+      content: "Game Panel - Startup Parameters"
   - - meta
     - property: og:description
       content: "Guide to configuring game server startup parameters. Managing server settings through the game control panel."

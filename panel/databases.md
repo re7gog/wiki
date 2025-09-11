@@ -7,7 +7,7 @@ head:
       content: databases, mysql, phpmyadmin, game panel, data management
   - - meta
     - property: og:title 
-      content: "Control Panel - Databases"
+      content: "Game Panel - Databases"
   - - meta
     - property: og:description
       content: "Guide to managing MySQL databases in the game panel. Creating, configuring, and managing databases for your server."

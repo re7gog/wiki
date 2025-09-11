@@ -7,7 +7,7 @@ head:
       content: activity log, logs, audit, game panel, server security
   - - meta
     - property: og:title 
-      content: "Control Panel - Activity Log"
+      content: "Game Panel - Activity Log"
   - - meta
     - property: og:description
       content: "Monitoring user actions on the server through the activity log. Tracking changes and security auditing."

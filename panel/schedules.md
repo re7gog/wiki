@@ -1,4 +1,19 @@
-# 🕰️ Schedules
+---
+title: "Task Scheduler"
+description: "Guide to automating server tasks using the game panel scheduler. Learn how to set up automated restarts, backups, and command execution on your game server."
+head:
+  - - meta
+    - name: keywords
+      content: pterodactyl scheduler, task automation, server scheduling, cron jobs, automated backups, server restarts, game server automation, senko digital
+  - - meta
+    - property: og:title 
+      content: "Game Panel - Task Scheduler"
+  - - meta
+    - property: og:description
+      content: "Guide to automating server tasks using the game panel scheduler. Learn how to set up automated restarts, backups, and command execution on your game server."
+---
+
+# 🕰️ Task Scheduler
 
 Quick guide to using the scheduling function in the game control panel.
 
@@ -13,7 +28,7 @@ In this guide, we will show you how to create a schedule and configure it.
 ![schedules management](/images/panel/schedules.png){data-zoomable}
 
 ::: tip
-For setting up time for scheduling, we recommend using **[Crontab.online](https://crontab.online/ru/)**
+For setting up time for scheduling, we recommend using **[Crontab.online](https://crontab.online/)**
 :::
 
 ## Creating a New Schedule

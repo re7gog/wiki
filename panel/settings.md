@@ -7,7 +7,7 @@ head:
       content: server settings, sftp access, game panel, configuration, server management
   - - meta
     - property: og:title 
-      content: "Server Settings"
+      content: "Game Panel - Server Settings"
   - - meta
     - property: og:description
       content: "Guide to configuring a game server. Managing SFTP access, renaming the server, and other basic settings."

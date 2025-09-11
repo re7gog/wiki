@@ -7,7 +7,7 @@ head:
       content: file manager, file upload, file editing, game panel
   - - meta
     - property: og:title 
-      content: "Control Panel - File Manager"
+      content: "Game Panel - File Manager"
   - - meta
     - property: og:description
       content: "Guide to using the file manager in the game panel. Uploading, editing, and managing server files."
