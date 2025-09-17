@@ -80,10 +80,10 @@ net.ipv4.tcp_keepalive_time = 1200
 net.ipv4.ip_local_port_range = 10000 65000
 net.ipv4.tcp_max_syn_backlog = 8192
 net.ipv4.tcp_max_tw_buckets = 5000
-net.ipv4.tcp_fack = 1
 net.ipv4.tcp_ecn = 1
 net.ipv4.tcp_sack = 1
-net.ipv4.tcp_timestamps = 1
+net.core.rmem_max = 16777216
+net.core.wmem_max = 16777216
 EOF
 sysctl -p
 ```
